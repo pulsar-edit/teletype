@@ -1,6 +1,6 @@
-# Teletype for Atom
+# Teletype for Pulsar
 
-An Atom package that lets developers share their workspace with team members and collaborate on code in real time.
+An Pulsar package that lets developers share their workspace with team members and collaborate on code in real time.
 
 Learn more at [teletype.atom.io](https://teletype.atom.io).
 
@@ -10,7 +10,7 @@ Learn more at [teletype.atom.io](https://teletype.atom.io).
 
 ### Command Line
 
-1. Install [Atom 1.22](https://atom.io) or newer
+1. Install [Pulsar](https://pulsar-edit.dev/) or newer
 2. In the terminal, install the package via apm:
 
     ```sh
@@ -19,8 +19,8 @@ Learn more at [teletype.atom.io](https://teletype.atom.io).
 
 ### GUI
 
-1. Install [Atom 1.22](https://atom.io) or newer
-1. Launch Atom
+1. Install [Pulsar](https://pulsar-edit.dev/) or newer
+1. Launch Pulsar
 1. Open Settings View using <kbd>Cmd+,</kbd> on macOS or <kbd>Ctrl+,</kbd> on other platforms
 1. Click the Install tab on the left side
 1. Enter `teletype` in the search box and press <kbd>Enter</kbd>
@@ -30,15 +30,15 @@ Learn more at [teletype.atom.io](https://teletype.atom.io).
 
 This package is powered by three main components:
 
-- [teletype-crdt](https://github.com/atom/teletype-crdt): The string-wise sequence CRDT that enables peer-to-peer collaborative editing.
-- [teletype-server](https://github.com/atom/teletype-server): The server-side application that facilitates peer discovery.
-- [teletype-client](https://github.com/atom/teletype-client): The editor-agnostic library that manages the interaction with other clients.
+- [teletype-crdt](https://github.com/pulsar-edit/teletype-crdt): The string-wise sequence CRDT that enables peer-to-peer collaborative editing.
+- [teletype-server](https://github.com/pulsar-edit/teletype-server): The server-side application that facilitates peer discovery.
+- [teletype-client](https://github.com/pulsar-edit/teletype-client): The editor-agnostic library that manages the interaction with other clients.
 
 ### Dependencies
 
 To run teletype tests locally, you'll first need to have:
 
-- Atom 1.22 or later
+- Pulsar
 - Node 7+
 - PostgreSQL 9.x
 
@@ -47,7 +47,7 @@ To run teletype tests locally, you'll first need to have:
 1. Clone and bootstrap
 
     ```
-    git clone https://github.com/atom/teletype.git
+    git clone https://github.com/pulsar/teletype.git
     cd teletype
     createdb teletype-test
     apm install
@@ -56,5 +56,5 @@ To run teletype tests locally, you'll first need to have:
 2. Run the tests
 
     ```
-    atom --test test
+    pulsar --test test
     ```
