@@ -9,7 +9,7 @@
     "real-time"
   ],
   "main": "index.js",
-  "repository": "https://github.com/atom/teletype",
+  "repository": "https://github.com/pulsar-edit/teletype",
   "scripts": {
     "lint": "standard --verbose",
     "test": "atom --test test"
